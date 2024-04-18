@@ -1,4 +1,4 @@
-names = ['eryk', 'wanda', 'ula', 'stefek', 'olek' ]
+names = ['eryk', 'wanda', 'ula', 'stefek', 'olek', 'marek' ]
 new_u = ('ula' , 'olek')
 
 for name in names: 
