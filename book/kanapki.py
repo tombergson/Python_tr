@@ -5,4 +5,4 @@ def make_sand(*toppings):
 
 make_sand('szynka')
 make_sand('szynka', 'ser', 'salata')
-make_sand('jojko', 'masło', 'ryba')
+make_sand('jojko', 'masło', 'ryba', 'ser')
