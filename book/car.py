@@ -16,3 +16,15 @@ class Car:
 
     def read_odometer(self):
         """ Wyśiwetla info o przebiegu samochodu"""
+        print(f"Ten samochód ma przejechne {self.odometer_reading} km.")
+
+    def update_odometer(self):
+        """Przypisanie wartosci licznikowi samochodu. zmiana zostanie odrzucona w przypadku próby cofnięcia"""
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("Nie można cofnąć licznika samochodu")
+    
+    def increment_odometer(self, kilometers):
+        """Inkrementacja wartosci licznika o podaną wartość"""
+        self.odometer_reading += kilometers
