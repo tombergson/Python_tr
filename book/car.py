@@ -28,3 +28,28 @@ class Car:
     def increment_odometer(self, kilometers):
         """Inkrementacja wartosci licznika o podaną wartość"""
         self.odometer_reading += kilometers
+
+class Battery:
+    """Próba modelowania akumulatora samochodu elektrycznego"""
+
+    def __init__(self, battery_size=40):
+        """Inicjalizacja atrybutów akumulatora"""
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        """Wyświetla info o wilkości aku"""
+        print(f"Ten samochód ma akumulator o pojemności {self.battery_size} kWh.")
+
+    def get_range(self):
+        """Wyświetla info o zasięgu samochodu na pdstawie pojemności akumulatora"""
+        if self.battery_size == 40:
+            range = 150
+        elif sel.battery_size == 65:
+            range = 225
+        
+        print(f"Zasięg tego samochodu wynosi ok {range} km po poełnym naładowaniu akumulatora")
+
+class ElectricCar(Car):
+    """Przedstawia cechy charakterystyczne dla samochodu elektrycznego"""
+
+    ## strona 232 
